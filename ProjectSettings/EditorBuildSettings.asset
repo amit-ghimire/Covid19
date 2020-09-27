@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Covid-19/_Scenes/covid-19.unity
+    guid: d994df554978e6c41a47c545fc59c45a
   m_configObjects: {}
