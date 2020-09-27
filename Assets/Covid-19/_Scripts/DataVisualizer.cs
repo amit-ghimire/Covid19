@@ -240,7 +240,8 @@ public class DataVisualizer : MonoBehaviour {
             //obj.transform.parent = seriesObj.transform;
             if (obj.GetComponent<CovidData>() == null)
             {
-                obj.AddComponent<BoxCollider>();
+                obj.AddComponent<MeshCollider>();
+                obj.GetComponent<MeshCollider>().convex = true;
                 obj.AddComponent<CovidData>();
                 obj.GetComponent<CovidData>().place = locationName;
                 obj.GetComponent<CovidData>().confirmed = n_confirmed;
